@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/Screens/BottomNav/bottomnav.dart';
 import 'package:instagram_ui/Screens/SignUp/signup.dart';
 import 'package:instagram_ui/Widgets/uihelper.dart';
 
@@ -46,7 +47,12 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Uihelper.customButton(callback: () {}, buttonname: "Log in"),
+            Uihelper.customButton(
+                callback: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => BottomNav()));
+                },
+                buttonname: "Log in"),
             SizedBox(
               height: 20,
             ),

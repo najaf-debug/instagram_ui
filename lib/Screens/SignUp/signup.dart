@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/Screens/Login/loginscreen.dart';
 import 'package:instagram_ui/Widgets/uihelper.dart';
