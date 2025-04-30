@@ -1,4 +1,7 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/Screens/Messages/messagescreen.dart';
 import 'package:instagram_ui/Widgets/uihelper.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -59,7 +62,10 @@ class HomeScreen extends StatelessWidget {
           IconButton(
               onPressed: () {}, icon: Uihelper.customImage(imgUrl: "IGTV.png")),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MessageScreen()));
+              },
               icon: Uihelper.customImage(imgUrl: "Messanger.png"))
         ],
       ),
